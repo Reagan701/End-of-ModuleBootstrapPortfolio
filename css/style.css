@@ -1,9 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 #Landing{
-    background-image: url(https://picsum.photos/1080/?random=14);
+
+    background:
+    linear-gradient(
+        rgba(79, 79, 79, 0.45),
+        rgba(41, 9, 9, 0.45)
+    ), 
+    url(https://picsum.photos/1080/?random=14);
+
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
+h1,h2,h3,h4,h5{
+    font-family: 'Poppins', cursive;
+}
+
+p, a, li{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#Skills img{
+    max-width: 50px;
+}
+
+#ProgressBarTop{
+    position: relative;
+    top: 0.375rem;
+}
+
+.circle{
+    width: 10px !important;
+    height: auto !important;
+    aspect-ratio: 1 !important;
+    border-radius: 50%;
+}
 
 .projects-container{
     display: flex;
