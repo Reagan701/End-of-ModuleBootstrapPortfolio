@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 #Landing{
 
     background:
     linear-gradient(
-        rgba(79, 79, 79, 0.45),
+        rgba(79, 79, 79, 0.85),
         rgba(41, 9, 9, 0.45)
     ), 
     url(https://picsum.photos/1080/?random=14);
@@ -15,11 +16,14 @@
 }
 
 h1,h2,h3,h4,h5{
+    font-weight: 900;
     font-family: 'Poppins', cursive;
+    color: #190844;
 }
 
 p, a, li{
     font-family: 'Open Sans', sans-serif;
+    color: #190844;
 }
 
 #Skills img{
@@ -46,8 +50,69 @@ p, a, li{
 }
 
 .projects-container img{
-    max-height: 400px;
-    max-width: 100%;
+    height: 400px;
+    max-width: 400px;
     flex-grow: 1;
     object-fit: cover;
 }
+
+#EducationContainer{
+    position: relative;
+}
+
+#EducationCircle::before{
+    position: absolute;
+    content: '';
+    width: 1.5rem;
+    height: 1.5rem;
+    border:3px solid black;
+    border-radius: 50%;
+    background-color: white;
+    left: -0.688rem;
+}
+
+#ProfessionalImage{
+    object-fit: cover;
+}
+
+.imgContainer{
+    position: relative;
+  }
+  
+.hoverIcon {
+    background-color:rgba(0, 42, 249, 0.5);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    opacity: 0;
+    transition: all 0.3s linear;
+  }
+  
+.imgContainer:hover .hoverIcon {
+    opacity: 1;
+  }
+
+  @media screen and (max-width:766px) {
+      #Right-Arrow{
+          display: none;
+      }
+      #Left-Arrow{
+          display: none;
+      }
+  }
+
+  @media screen and (min-width:767px) {
+      #Down-Arrow{
+          display: none;
+      }
+      #Up-Arrow{
+          display: none;
+      }
+  }
