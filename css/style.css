@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+html, body{
+    overflow-x: hidden;
+}
+
 #Landing {
 
     background:
@@ -13,6 +17,26 @@
     background-attachment: fixed;
 }
 
+#InputContainer{
+    position: relative;
+}
+
+.btn{
+    border-radius: 0% !important;
+}
+
+#MessageIcon{
+    position: absolute;
+    top: 1.75rem;
+    right:2rem;
+}
+
+#ContactIcon{
+    position: absolute;
+    top: 1.563rem;
+    right:1.25rem;
+}
+
 h1,
 h2,
 h3,
@@ -21,6 +45,10 @@ h5 {
     font-weight: 900;
     font-family: 'Poppins', cursive;
     color: #190844;
+}
+
+button{
+    font-family: 'Open Sans', sans-serif;
 }
 
 p, a, li {
@@ -56,10 +84,6 @@ p, a, li {
     font-weight: 700;
 }
 
-#Slider{
-    border:3px solid black
-}
-
 .projects-container img {
     height: 400px;
     max-width: 400px;
@@ -67,8 +91,15 @@ p, a, li {
     object-fit: cover;
 }
 
+#EducationImage{
+    object-fit:contain;
+    max-width: 225px;
+    height:225px;
+}
+
 #EducationContainer {
     position: relative;
+    min-height: 24.988rem;
 }
 
 #EducationCircle::before {
@@ -82,14 +113,18 @@ p, a, li {
     left: -0.688rem;
 }
 
-#ProfessionalImage, #TestimonialImage {
+#ProfessionalImage, #TestimonialImage,#LecturerImage {
     object-fit: cover;
 }
 
 #TestimonialImage{
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
+    width: 400px !important;
+    max-height: 400px !important;
+}
+
+#LecturerImage{
+    width: 166px !important;
+    height: 250px !important;
 }
 
 .imgContainer {
@@ -126,6 +161,28 @@ p, a, li {
         display: none;
     }
 
+    #BootstrapIcon{
+        position:absolute;
+        object-fit: cover;
+        min-height: 3.125rem;
+        width: 3.125rem;
+        bottom: 0.063rem;
+        left:7.188rem;
+    }
+    #CIcon{
+        position:absolute;
+        object-fit: cover;
+        min-height: 3.125rem;
+        width: 3.125rem;
+        left:7.188rem;
+    }
+
+    #Slider{
+        border:2px solid rgb(228, 218, 218);
+        width: 100%;
+        height: 498px;
+    }
+
     #Left-Arrow {
         display: none;
     }
@@ -136,6 +193,21 @@ p, a, li {
         display: none;
     }
 
+    #Slider{
+        border:2px solid rgb(228, 218, 218);
+        width: 50%;
+    }
+
+    #BootstrapIcon{
+        object-fit: cover;
+        min-height: 3.125rem;
+        width: 3.125rem;
+    }
+    /*
+    #CIcon{
+        position:absolute;
+        left: 7.313rem;
+    } */
     #Up-Arrow {
         display: none;
     }
