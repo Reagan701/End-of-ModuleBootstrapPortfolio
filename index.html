@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/03ced66856.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
@@ -12,11 +15,12 @@
 </head>
 
 <body class="bg-white">
-    
+
     <nav id="navbar" class=" p-0 navbar text-center fixed-top navbar-expand-lg navbar-light">
         <div class="container p-3 mt-2">
             <a href="#" id="navText" class="fs-1 navbar-brand"> Reagan Carolussen </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle = "collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" id="navbarNavAltMarkup"></span>
             </button>
 
@@ -31,10 +35,18 @@
                     </div>
                 </div>
 
+
                 <div class="navbar-nav mx-auto">
                     <div class="navbar-nav fs-4 d-flex">
-                        <a class="nav-link" href="https://github.com/Reagan701/" target="_blank"> <i class="bi bi-github"></i></a>
-                        <a class="nav-link" href="https://www.linkedin.com/in/reagan-carolussen-03054823a/" target="_blank"> <i class="bi bi-linkedin"></i> </a>
+                        <a id="navbarIcon" class="nav-link" href="https://github.com/Reagan701/" target="_blank"> <i
+                                class="bi bi-github"></i></a>
+                        <a id="navbarIcon" class="nav-link"
+                            href="https://www.linkedin.com/in/reagan-carolussen-03054823a/" target="_blank"> <i
+                                class="bi bi-linkedin"></i>
+                        </a>
+                        <a id="navbarIcon" class="nav-link" href="https://codepen.io/reagan701" target="_blank"> <i
+                                class="fa-brands fa-codepen"></i></a>
+
                     </div>
                 </div>
             </div>
@@ -52,7 +64,7 @@
                         <h4 class="my-5 display-4">An Aspiring Web-Developer</h4>
                     </div>
                     <div data-aos="zoom-in">
-                        <button class=" mt-3 fs-3 btn btn-outline-primary"> Contact Me </button>
+                        <a href="#Project"><button id="customBtn" class=" mt-3 px-4 py-3 fs-3"> Contact Me </button></a>
                     </div>
                 </div>
             </div>
@@ -61,21 +73,18 @@
 
     <section id="About">
         <div class="container my-5">
-            <!-- <div class="row mb-5">
-                <div class="col-md-6">
-                    <h3>Front-End Development</h3>
-                    <p> This is text </p>
+            <div class="row mb-5">
+                <div class="text-center col-md-12">
+                    <h1>Front-End Development</h1>
+                    <p class="fs-5"> I use HTML5, CSS3 and Bootstrap, to develop high quality and professional looking sites </p>
                 </div>
-                <div class="col-md-6">
-                    <h3>Back-End Development</h3>
-                    <p> This is text </p>
-                </div>
-            </div> -->
+            </div>
 
             <div class="row">
                 <div class="col-md-6">
                     <div class="h-100" data-aos="flip-left">
-                        <img id="ProfessionalImage" class=" h-100 img-fluid" src="./images/About_Image/Reagan1.jpg" alt="SelfImage">
+                        <img id="ProfessionalImage" class=" h-100 img-fluid" src="./images/About_Image/Reagan1.jpg"
+                            alt="SelfImage">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -84,14 +93,19 @@
                             <div class="col-md-12">
                                 <div data-aos="fade-left">
                                     <div class="headingContainer">
-                                        <h1 id="headingCircle"> About Me </h1>
+                                        <h2 id="headingCircle"> About Me </h2>
                                     </div>
                                 </div>
                                 <div data-aos="fade-left">
-                                    <h4> Reagan Carolussen </h4>
+                                    <h3> Reagan Carolussen </h3>
                                 </div>
                                 <div data-aos="fade-left">
-                                    <p class="fs-4"> I am a hard-working, multi-talented individual. I love talking to people and learning new things. I spend a lot of my free time discovering new things as well as developing new hobbies. My passion for programming came when I discovered my love for solving problems and logic-based puzzles. Programming was the one thing that made me feel like I was doing something I genuinely liked.</p>
+                                    <p class="fs-5"> I am a hard-working, multi-talented individual. I love talking to
+                                        people and learning new things. I spend a lot of my free time discovering new
+                                        things as well as developing new hobbies. My passion for programming came when I
+                                        discovered my love for solving problems and logic-based puzzles. Programming was
+                                        the one thing that made me feel like I was doing something I genuinely liked.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -121,22 +135,22 @@
                             <div class="col-1">
                                 <ul class="d-flex flex-column justify-content-between h-100 list-unstyled">
                                     <div data-aos="fade-up">
-                                        <li class="mt-3" > : </li>
+                                        <li class="mt-3"> : </li>
                                     </div>
                                     <div data-aos="fade-up">
-                                        <li class="mt-3" > : </li>
+                                        <li class="mt-3"> : </li>
                                     </div>
                                     <div data-aos="fade-up">
-                                        <li class="mt-3" > : </li>
+                                        <li class="mt-3"> : </li>
                                     </div>
                                     <div data-aos="fade-up">
-                                        <li class="mt-3" > : </li>
+                                        <li class="mt-3"> : </li>
                                     </div>
                                     <div data-aos="fade-up">
-                                        <li class="mt-3" > : </li>
+                                        <li class="mt-3"> : </li>
                                     </div>
                                     <div data-aos="fade-up">
-                                        <li class="mt-3" > : </li>
+                                        <li class="mt-3"> : </li>
                                     </div>
                                 </ul>
                             </div>
@@ -168,107 +182,131 @@
             </div>
         </div>
     </section>
-    
+
     <section id="Skills">
         <div class="container my-5">
             <div class="row">
                 <div class="col-md-12">
                     <div class="headingContainer">
-                        <h1 id="headingCircle" class="my-5"> Skills </h1>
+                        <h1 id="leftHeadingCircle" class="my-5"> Skills </h1>
                     </div>
 
                     <!-- Technical Skills -->
-                        <div class="row my-5 d-flex">
-                            <div data-aos="zoom-in-left" class="col-md-6 d-flex justify-content-center align-items-center">
-                                <h2> Technical Skills <i id="Right-Arrow" class="bi bi-arrow-right"></i> <i id="Down-Arrow" class="bi bi-arrow-down"></i> </h2>
-                            </div>
-                            <div class="col-md-3">
-                                <div data-aos="flip-up" class="mb-5" style="position: relative;">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h4> HTML </h4>
-                                        <img class="img-fluid w-25" src="./images/Skill_Icons/html-5-icon.png" alt="HTML Image">
-                                        <h4> 90% </h4>
-                                    </div>
-                                        <div class="progress" id="ProgressBarTop" style="width:90%">
-                                            <div class="progress-bar" role="progressbar" style="background-color: #ea3a23 ;width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                </div>
-                                <div data-aos="flip-up" class="my-5" style="position: relative;">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h4> CSS </h4>
-                                        <img class="img-fluid w-25 ms-3" src="./images/Skill_Icons/css-3-icon.png" alt="CSS Image">
-                                        <h4> 75% </h4>
-                                    </div>
-                                    <div class="progress" id="ProgressBarTop" style="width:75%">
-                                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div data-aos="flip-up" class="my-5" style="position: relative;">
-                                    <div class="d-flex mt-5 mb-1 justify-content-between align-items-center">
-                                        <h4> Unity </h6>
-                                        <img src="./images/Skill_Icons/unity-69-logo-black-and-white.png" alt="Unity Logo">
-                                        <h4> 70% </h6>
-                                    </div>
-                                    <div class="progress" id="ProgressBarTop" style="width:70%;">
-                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div data-aos="flip-up" class="mb-5" style="position: relative;">
-                                    <div style="position: relative;" class=" d-flex justify-content-between align-items-center"">
-                                        <h4> Bootstrap </h4>
-                                        <img class="img-fluid w-25" id="BootstrapIcon" src="./images/Skill_Icons/Bootstrap_logo.svg.png" alt="Bootstrap Logo">
-                                        <h4> 65% </h4>
-                                    </div>
-                                    
-                                    <div class="progress" id="ProgressBarTop" style="width:65%;">
-                                        <div class="progress-bar" role="progressbar" style="background-color: #7309f5; width: 100%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div data-aos="flip-up" class="my-5" style="position: relative;">
-                                    <div style="min-height:50px;" class="d-flex mb-1 justify-content-between align-items-center">
-                                        <h4> C# </h4>
-                                        <img class="img-fluid ms-5 w-25" id="CIcon" src="./images/Skill_Icons/c.png" alt="C# Logo">
-                                        <h4> 80% </h4>
-                                    </div>
-                                    
-                                    <div class="progress" id="ProgressBarTop" style="width:80%">
-                                        <div class="progress-bar" role="progressbar" style="background-color: #75217d; width: 100%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div data-aos="flip-up" class="my-5" style="position: relative;">
-                                    <div class="d-flex mt-5 mb-1 justify-content-between align-items-center">
-                                        <h4> Modelling </h4>
-                                        <img src="./images/Skill_Icons/autodesk-maya.png" alt="Maya Logo" class="img-fluid">
-                                        <h4> 50% </h4>
-                                    </div>
-                                    
-                                    <div class="progress" id="ProgressBarTop" style="width:50%">
-                                        <div class="progress-bar" role="progressbar" style="background-color: #33bdcd; width: 100%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            
+                    <div class="row my-5 d-flex">
+                        <div data-aos="zoom-in-left" class="col-md-6 d-flex justify-content-center align-items-center">
+                            <h2> Technical Skills <i id="Right-Arrow" class="bi bi-arrow-right"></i> <i id="Down-Arrow"
+                                    class="bi bi-arrow-down"></i> </h2>
                         </div>
+                        <div class="col-md-3">
+                            <div data-aos="flip-up" class="mb-5" style="position: relative;">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h4> HTML </h4>
+                                    <img class="img-fluid w-25" src="./images/Skill_Icons/html-5-icon.png"
+                                        alt="HTML Image">
+                                    <h4> 90% </h4>
+                                </div>
+                                <div class="progress" id="ProgressBarTop" style="width:90%">
+                                    <div class="progress-bar" role="progressbar"
+                                        style="background-color: #ea3a23 ;width: 100%;" aria-valuenow="100"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div data-aos="flip-up" class="my-5" style="position: relative;">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h4> CSS </h4>
+                                    <img class="img-fluid w-25 ms-3" src="./images/Skill_Icons/css-3-icon.png"
+                                        alt="CSS Image">
+                                    <h4> 75% </h4>
+                                </div>
+                                <div class="progress" id="ProgressBarTop" style="width:75%">
+                                    <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="0"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div data-aos="flip-up" class="my-5" style="position: relative;">
+                                <div class="d-flex mt-5 mb-1 justify-content-between align-items-center">
+                                    <h4> Unity </h6>
+                                        <img src="./images/Skill_Icons/unity-69-logo-black-and-white.png"
+                                            alt="Unity Logo">
+                                        <h4> 70% </h6>
+                                </div>
+                                <div class="progress" id="ProgressBarTop" style="width:70%;">
+                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;"
+                                        aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div data-aos="flip-up" class="mb-5" style="position: relative;">
+                                <div style="position: relative;"
+                                    class=" d-flex justify-content-between align-items-center"">
+                                        <h4> Bootstrap </h4>
+                                        <img class=" img-fluid w-25" id="BootstrapIcon"
+                                    src="./images/Skill_Icons/Bootstrap_logo.svg.png" alt="Bootstrap Logo">
+                                    <h4> 65% </h4>
+                                </div>
+
+                                <div class="progress" id="ProgressBarTop" style="width:65%;">
+                                    <div class="progress-bar" role="progressbar"
+                                        style="background-color: #7309f5; width: 100%;" aria-valuenow="0"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div data-aos="flip-up" class="my-5" style="position: relative;">
+                                <div style="min-height:50px;"
+                                    class="d-flex mb-1 justify-content-between align-items-center">
+                                    <h4> C# </h4>
+                                    <img class="img-fluid ms-5 w-25" id="CIcon" src="./images/Skill_Icons/c.png"
+                                        alt="C# Logo">
+                                    <h4> 80% </h4>
+                                </div>
+
+                                <div class="progress" id="ProgressBarTop" style="width:80%">
+                                    <div class="progress-bar" role="progressbar"
+                                        style="background-color: #75217d; width: 100%;" aria-valuenow="0"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div data-aos="flip-up" class="my-5" style="position: relative;">
+                                <div class="d-flex mt-5 mb-1 justify-content-between align-items-center">
+                                    <h4> Modelling </h4>
+                                    <img src="./images/Skill_Icons/autodesk-maya.png" alt="Maya Logo" class="img-fluid">
+                                    <h4> 50% </h4>
+                                </div>
+
+                                <div class="progress" id="ProgressBarTop" style="width:50%">
+                                    <div class="progress-bar" role="progressbar"
+                                        style="background-color: #33bdcd; width: 100%;" aria-valuenow="0"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
 
 
                     <!-- Soft Skills -->
@@ -281,11 +319,14 @@
                                     <i class="bi bi-clock-fill"></i>
                                     <h4> 95% </h4>
                                 </div>
-                                <div class="progress" id="ProgressBarTop" style="width:65%">
-                                    <div class="progress-bar" role="progressbar" style=" background-color: #ea3a23 ; width: 100%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress" id="ProgressBarTop" style="width:95%">
+                                    <div class="progress-bar" role="progressbar"
+                                        style=" background-color: #ea3a23 ; width: 100%;" aria-valuenow="0"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
                                 </div>
                             </div>
                             <div data-aos="flip-up" class="my-5" style="position: relative;">
@@ -294,27 +335,17 @@
                                     <i class="bi bi-people-fill"></i>
                                     <h4> 80% </h4>
                                 </div>
-                                
+
                                 <div class="progress" id="ProgressBarTop" style="width:80%">
-                                    <div class="progress-bar" role="progressbar" style="background-color: #3395cd; width: 100%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar"
+                                        style="background-color: #3395cd; width: 100%;" aria-valuenow="0"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
                                 </div>
                             </div>
-                            <!-- <div style="position: relative;">
-                                <div class="d-flex justify-content-between">
-                                    <h4> Heading </h4>
-                                    <h4> 60% </h4>
-                                </div>
-                                
-                                <div class="progress" id="ProgressBarTop" style="width:60%">
-                                    <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div> -->
                         </div>
                         <div class="col-md-3">
                             <div data-aos="flip-up" class="my-5" style="position: relative;">
@@ -323,12 +354,15 @@
                                     <i class="bi bi-person-lines-fill"></i>
                                     <h4> 95% </h4>
                                 </div>
-                                
+
                                 <div class="progress" id="ProgressBarTop" style="width:95%">
-                                    <div class="progress-bar" role="progressbar" style="background-color: greenyellow; width: 100%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar"
+                                        style="background-color: greenyellow; width: 100%;" aria-valuenow="0"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
                                 </div>
                             </div>
                             <div data-aos="flip-up" class="my-5" style="position: relative;">
@@ -337,30 +371,21 @@
                                     <i class="bi bi-screwdriver"></i>
                                     <h4> 70% </h4>
                                 </div>
-                                
+
                                 <div class="progress" id="ProgressBarTop" style="width:70%">
-                                    <div class="progress-bar" role="progressbar" style="background-color: orange; width: 100%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar"
+                                        style="background-color: orange; width: 100%;" aria-valuenow="0"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
                                 </div>
                             </div>
-                            <!-- <div style="position: relative;">
-                                <div class="d-flex justify-content-between">
-                                    <h4> Heading </h4>
-                                    <h4> 60% </h4>
-                                </div>
-                                
-                                <div class="progress" id="ProgressBarTop" style="width:60%">
-                                    <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div> -->
                         </div>
                         <div data-aos="zoom-in-left" class="col-md-6 d-flex justify-content-center align-items-center">
-                            <h2> <i id="Left-Arrow" class="bi bi-arrow-left"></i> <i id="Up-Arrow" class="bi bi-arrow-up"></i> Soft Skills</h2>
+                            <h2> <i id="Left-Arrow" class="bi bi-arrow-left"></i> <i id="Up-Arrow"
+                                    class="bi bi-arrow-up"></i> Soft Skills</h2>
                         </div>
                     </div>
 
@@ -374,61 +399,80 @@
             <div class="row">
                 <div class="col-md-6">
                     <div data-aos="zoom-in" class="headingContainer">
-                        <h2 id="headingCircle"> Education </h2>
+                        <h2 id="leftHeadingCircle"> Education </h2>
                     </div>
-                    <div data-aos="zoom-in-right" id="EducationContainer" class="border px-5 py-4 my-5">
+                    <div data-aos="zoom-in-right" id="EducationContainer" class="bg-light shadow-lg px-5 py-4 my-5">
                         <div id="EducationCircle" class="d-flex mb-4 justify-content-between">
-                            <a class="h4 text-decoration-underline" href="https://www.lifechoices.co.za/academy" target="_blank"> Life Choices Academy</a>
+                            <a class="h4 text-decoration-underline" href="https://www.lifechoices.co.za/academy"
+                                target="_blank"> Life Choices Academy</a>
                             <h5>2022 - Present</h5>
                         </div>
                         <p>Currently studying Web-Development and Coding at Life Choices Academy</p>
                         <div class="d-flex justify-content-center align-items-center">
-                            <img class="img-fluid" src="./images/Education and Work Experience Images/Education/Life Choices Academy.png" alt="Life Choices Logo">
+                            <img class="img-fluid"
+                                src="./images/Education and Work Experience Images/Education/Life Choices Academy.png"
+                                alt="Life Choices Logo">
                         </div>
                     </div>
-                    <div data-aos="zoom-in-right" id="EducationContainer" class="border px-5 py-4 my-5">
+                    <div data-aos="zoom-in-right" id="EducationContainer" class="bg-light shadow-lg px-5 py-4 my-5">
                         <div id="EducationCircle" class="d-flex mb-4 justify-content-between">
-                            <a class="h4 text-decoration-underline" href="https://www.aie.ac/" target="_blank"> Academic Institute of Excellence</a>
+                            <a class="h4 text-decoration-underline" href="https://www.aie.ac/" target="_blank"> Academic
+                                Institute of Excellence</a>
                             <h5>2020</h5>
                         </div>
                         <p>Studied Video Game Design and Development at AIE where I graduated with the bronze award</p>
                         <div class="d-flex justify-content-center align-items-center">
-                            <img id="EducationImage" class="img-fluid" src="./images/Education and Work Experience Images/Education/AIE-Logo.png" alt="AIE Logo">
+                            <img id="EducationImage" class="img-fluid"
+                                src="./images/Education and Work Experience Images/Education/AIE-Logo.png"
+                                alt="AIE Logo">
                         </div>
                     </div>
-                    <div data-aos="zoom-in-right" id="EducationContainer" class="border px-5 py-4 my-5">
+                    <div data-aos="zoom-in-right" id="EducationContainer" class="bg-light shadow-lg px-5 py-4 my-5">
                         <div id="EducationCircle" class="d-flex mb-4 justify-content-between">
-                            <a class="h4 text-decoration-underline" href="http://www.mondalehs.co.za/" target="_blank">Mondale High School</a>
+                            <a class="h4 text-decoration-underline" href="http://www.mondalehs.co.za/"
+                                target="_blank">Mondale High School</a>
                             <h5>2015-2019</h5>
                         </div>
-                        <p> Attended Mondale High School from 2015-2019 where I marticulated with a Bachelors doing Pure Maths, Life Sciences, Geography and Physics.  </p>
+                        <p> Attended Mondale High School from 2015-2019 where I marticulated with a Bachelors doing Pure
+                            Maths, Life Sciences, Geography and Physics. </p>
                         <div class="d-flex justify-content-center align-items-center">
-                            <img class="img-fluid" src="./images/Education and Work Experience Images/Education/Mondale-High-School.png" alt="Mondale Logo">
+                            <img class="img-fluid"
+                                src="./images/Education and Work Experience Images/Education/Mondale-High-School.png"
+                                alt="Mondale Logo">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div data-aos="zoom-in" class="headingContainer">
-                        <h2 id="headingCircle"> Work Experience </h2>
+                        <h2 id="leftHeadingCircle"> Work Experience </h2>
                     </div>
-                    <div data-aos="zoom-in-left" id="EducationContainer" class="d-flex flex-column justify-content-between text-start border px-5 py-4 my-5">
+                    <div data-aos="zoom-in-left" id="EducationContainer"
+                        class="bg-light shadow-lg px-5 py-4 my-5">
                         <div id="EducationCircle" class="mb-4">
-                            <a class="h4 text-decoration-underline" href="http://www.virtualworld.capetown/" target="_blank"> Virtual World</a>
+                            <a class="h4 text-decoration-underline" href="http://www.virtualworld.capetown/"
+                                target="_blank"> Virtual World</a>
                             <h5>2017</h5>
                         </div>
-                        <p> Job Shadowed in Grade 10 at Virtual World where I learned how management works in professional spaces </p>
+                        <p> Job Shadowed in Grade 10 at Virtual World where I learned how management works in
+                            professional spaces </p>
                         <div class="d-flex justify-content-center align-items-center">
-                            <img class="img-fluid" src="https://static.wixstatic.com/media/ab8381_7fc19164cc184b67a0a6218c34daa214~mv2.jpg/v1/fill/w_716,h_200,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/ab8381_7fc19164cc184b67a0a6218c34daa214~mv2.jpg" alt="Virtual World Logo">
+                            <img class="img-fluid"
+                                src="https://static.wixstatic.com/media/ab8381_7fc19164cc184b67a0a6218c34daa214~mv2.jpg/v1/fill/w_716,h_200,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/ab8381_7fc19164cc184b67a0a6218c34daa214~mv2.jpg"
+                                alt="Virtual World Logo">
                         </div>
                     </div>
-                    <div data-aos="zoom-in-left" id="EducationContainer" class="border px-5 py-4 my-5">
+                    <div data-aos="zoom-in-left" id="EducationContainer" class="bg-light shadow-lg px-5 py-4 my-5">
                         <div id="EducationCircle" class="d-flex mb-4 justify-content-between">
-                            <a class="h4 text-decoration-underline" href="https://cpoa.co.za/estate_property/yvonne-parfitt-place-retirement-village/" target="_blank"> CPOA Yvonne Parfitt Place</a>
+                            <a class="h4 text-decoration-underline"
+                                href="https://cpoa.co.za/estate_property/yvonne-parfitt-place-retirement-village/"
+                                target="_blank"> CPOA Yvonne Parfitt Place</a>
                             <h5>2017</h5>
                         </div>
                         <p> Volunteered at an CPOA Yvonne Parfitt Place, an old age home where I helped clean </p>
                         <div class="d-flex justify-content-center align-items-center">
-                            <img class="img-fluid" src="./images/Education and Work Experience Images/Work Experience/CPOA.png" alt="Virtual World Logo">
+                            <img class="img-fluid"
+                                src="./images/Education and Work Experience Images/Work Experience/CPOA.png"
+                                alt="CPOA Logo">
                         </div>
                     </div>
                 </div>
@@ -440,10 +484,12 @@
         <div class="container text-center my-5">
             <div data-aos="zoom-in" class="headingContainer">
                 <h4 id="projectHeadingCircle" class="fs-1"> Here are some Projects I worked on </h4>
+                <h5 id="hoverOverText" style="opacity:0.5;" class=" fs-3"> Hover to view </h5>
+                <h5 id="clickText" style="opacity:0.5;" class="fs-3"> Click to view </h5>
             </div>
             <div data-aos="zoom-in-down" class="projects-container my-5">
-                <div class="my-5 imgContainer">
-                    <img class="w-100 img-fluid" src="./images/Projects/Rainbow/Rainbow.png">
+                <div class="mx-auto my-5 imgContainer">
+                    <img class="w-100 img-fluid" src="./images/Projects/Rainbow/Rainbow.png" alt="RainbowProject">
                     <div class="hoverIcon">
                         <div class=" ps-3 d-flex align-items-center justify-content-between w-100 h-100">
                             <div class="row">
@@ -451,51 +497,58 @@
                                     <p id="hoverText">A Rainbow created using HTML and CSS </p>
                                 </div>
                                 <div class="col-6">
-                                    <a target="_blank" href="https://github.com/Reagan701/Rainbow"><button class="btn btn-primary">
-                                        <i class="bi bi-github"></i>
-                                        Github
-                                    </button>
+                                    <a target="_blank" href="https://github.com/Reagan701/Rainbow"><button
+                                            id="projectBtn" class="btn btn-primary">
+                                            <i class="bi bi-github"></i>
+                                            Github
+                                        </button>
                                     </a>
                                 </div>
                                 <div class="col-6">
-                                    <a target="_blank" href="https://reagan-rainbow.netlify.app"><button class="btn btn-primary">
-                                        <i class="bi bi-globe"></i>
-                                        Live
-                                    </button>
+                                    <a target="_blank" href="https://reagan-rainbow.netlify.app"><button id="projectBtn"
+                                            class="btn btn-primary">
+                                            <i class="bi bi-globe"></i>
+                                            Live
+                                        </button>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div data-aos="zoom-in-up" class=" my-5 imgContainer">
-                    <img class="img-fluid w-100" src="./images/Projects/HolidayDestination/HolidayDestination.png">
+                <div data-aos="zoom-in-up" class=" mx-auto my-5 imgContainer">
+                    <img class="img-fluid w-100" src="./images/Projects/HolidayDestination/HolidayDestination.png"
+                        alt="HolidayProject">
                     <div class="hoverIcon">
                         <div class=" d-flex align-items-center justify-content-center w-100 h-100">
                             <div class="row">
                                 <div class="row">
-                                    <p id="hoverText" >A small website I created with HTML and CSS that displays my favourite holiday destination</p>
+                                    <p id="hoverText">A small website I created with HTML and CSS that displays my
+                                        favourite holiday destination</p>
                                 </div>
                                 <div class="col-6">
-                                    <a target="_blank" href="https://github.com/Reagan701/HolidayDestination"><button class="btn btn-primary">
-                                        <i class="bi bi-github"></i>
-                                        Github
-                                    </button>
+                                    <a target="_blank" href="https://github.com/Reagan701/HolidayDestination"><button
+                                            id="projectBtn" class="btn btn-primary">
+                                            <i class="bi bi-github"></i>
+                                            Github
+                                        </button>
                                     </a>
                                 </div>
                                 <div class="col-6">
-                                    <a target="_blank" href="https://reaganholidaydestination.netlify.app"><button class="btn btn-primary">
-                                        <i class="bi bi-globe"></i>
-                                        Live
-                                    </button>
+                                    <a target="_blank" href="https://reaganholidaydestination.netlify.app"><button
+                                            id="projectBtn" class="btn btn-primary">
+                                            <i class="bi bi-globe"></i>
+                                            Live
+                                        </button>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div data-aos="zoom-in-down" class="my-5 imgContainer">
-                    <img class="img-fluid w-100" src="./images/Projects/Calculator/Calculator.png">
+                <div data-aos="zoom-in-down" class="mx-auto my-5 imgContainer">
+                    <img class="img-fluid w-100" src="./images/Projects/Calculator/Calculator.png"
+                        alt="CalculatorProject">
                     <div class="hoverIcon">
                         <div class=" d-flex align-items-center justify-content-center w-100 h-100">
                             <div class="row">
@@ -503,99 +556,83 @@
                                     <p id="hoverText">A calculator made using CSS and HTML, while rough shows</p>
                                 </div>
                                 <div class="col-6">
-                                    <a target="_blank" href="https://github.com/Reagan701/Calculator"><button class="btn btn-primary">
-                                        <i class="bi bi-github"></i>
-                                        Github
-                                    </button>
+                                    <a target="_blank" href="https://github.com/Reagan701/Calculator">
+                                        <button id="projectBtn" class="btn btn-primary">
+                                            <i class="bi bi-github"></i>
+                                            Github
+                                        </button>
                                     </a>
                                 </div>
                                 <div class="col-6">
-                                    <a target="_blank" href="https://reagancalculator.netlify.app"><button class="btn btn-primary">
-                                        <i class="bi bi-globe"></i>
-                                        Live
-                                    </button>
+                                    <a target="_blank" href="https://reagancalculator.netlify.app"><button
+                                            id="projectBtn" class="btn btn-primary">
+                                            <i class="bi bi-globe"></i>
+                                            Live
+                                        </button>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="imgContainer">
-                    <img class="img-fluid" src="./images/Projects/Rainbow/Rainbow.png">
+                <div data-aos="zoom-in-down" class="mx-auto my-5 imgContainer">
+                    <img class="img-fluid w-100" src="./images/Projects/GroupProject/GroupProject.png" alt="GroupProject">
                     <div class="hoverIcon">
                         <div class=" d-flex align-items-center justify-content-center w-100 h-100">
                             <div class="row">
                                 <div class="row">
-                                    <p>A Rainbow I created</p>
+                                    <p id="hoverText">A group project done with HTML and CSS, using the multiple branch
+                                        system on Github </p>
                                 </div>
                                 <div class="col-6">
-                                    <a href="#About"><button class="btn btn-primary">
-                                        <i class="bi bi-github"></i>
-                                        Github
-                                    </button>
+                                    <a href="https://github.com/Reagan701/College" target="_blank"><button
+                                            id="projectBtn" class="btn btn-primary">
+                                            <i class="bi bi-github"></i>
+                                            Github
+                                        </button>
                                     </a>
                                 </div>
                                 <div class="col-6">
-                                    <a href="#About"><button class="btn btn-primary">
-                                        <i class="bi bi-globe"></i>
-                                        Live
-                                    </button>
+                                    <a href="https://groupprojectcollege.netlify.app" target="_blank"><button
+                                            id="projectBtn" class="btn btn-primary">
+                                            <i class="bi bi-globe"></i>
+                                            Live
+                                        </button>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="imgContainer">
-                    <img class="img-fluid" src="./images/Projects/Rainbow/Rainbow.png">
+                <div data-aos="zoom-in-up" class="mx-auto my-5 imgContainer">
+                    <img class="img-fluid w-100gi" src="./images/Projects/MockPortfolio/MockPortfolio.png"
+                        alt="MockPortfolioProject">
                     <div class="hoverIcon">
                         <div class=" d-flex align-items-center justify-content-center w-100 h-100">
                             <div class="row">
                                 <div class="row">
-                                    <p id="hoverText">A Rainbow I created</p>
+                                    <p id="hoverText">A Mock Portfolio made using only HTML and CSS</p>
                                 </div>
                                 <div class="col-6">
-                                    <a href="#About"><button class="btn btn-primary">
-                                        <i class="bi bi-github"></i>
-                                        Github
-                                    </button>
+                                    <a target="_blank" href="https://github.com/Reagan701/DesignPortfolio"><button
+                                            id="projectBtn" class="btn btn-primary">
+                                            <i class="bi bi-github"></i>
+                                            Github
+                                        </button>
                                     </a>
                                 </div>
                                 <div class="col-6">
-                                    <a href="#About"><button class="btn btn-primary">
-                                        <i class="bi bi-globe"></i>
-                                        Live
-                                    </button>
+                                    <a target="_blank" href="https://carolussen-portfolio.netlify.app"><button
+                                            id="projectBtn" class="btn btn-primary">
+                                            <i class="bi bi-globe"></i>
+                                            Live
+                                        </button>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="imgContainer">
-                    <img class="img-fluid" src="https://picsum.photos/600/?random=6">
-                    <div class="hoverIcon">
-                        <p>Something</p>
-                    </div>
-                </div>
-                <div class="imgContainer">
-                    <img class="img-fluid" src="./images/Voxel.png">
-                    <div class="hoverIcon">
-                        <p>Something</p>
-                    </div>
-                </div>
-                <div class="imgContainer">
-                    <img class="img-fluid" src="https://picsum.photos/600/?random=9">
-                    <div class="hoverIcon">
-                        <p>Something</p>
-                    </div>
-                </div>
-                <div class="imgContainer">
-                    <img class="img-fluid" src="https://picsum.photos/600/?random=10">
-                    <div class="hoverIcon">
-                        <p>Something</p>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>
@@ -603,22 +640,26 @@
     <section id="Testimonials">
         <div class="container my-5">
             <div data-aos="zoom-in" class="headingContainer">
-                <h3 id="testimonialHeadingCircle" class=" text-center fs-1 my-5"> Here's what people have to say </h4>
+                <h3 id="testimonialHeadingCircle" class=" text-center fs-1 my-5"> What people say about me </h4>
             </div>
 
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active bg-dark circle" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="bg-dark circle" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="bg-dark circle"  aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                        class="active bg-dark circle" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        class="bg-dark circle" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        class="bg-dark circle" aria-label="Slide 3"></button>
                 </div>
                 <div data-aos="zoom-in-down" class="carousel-inner">
                     <div class=" h-100 w-100 carousel-item active">
                         <div class="d-block d-md-flex gap-5 justify-content-between">
-                            <div id="Slider">
+                            <div class="bg-light shadow-lg" id="Slider">
                                 <div class="row m-4">
                                     <div class="col-md-4">
-                                        <img id="TestimonialImage" class="img-fluid d-block h-100 w-100" src="./images/Portfolio_Images/Monique (2).jpg">
+                                        <img id="TestimonialImage" class="img-fluid d-block h-100 w-100"
+                                            src="./images/Portfolio_Images/Monique (2).jpg">
                                     </div>
                                     <div class="col-md-8">
                                         <h2> Monique Dampies</h2>
@@ -626,13 +667,17 @@
                                     </div>
                                 </div>
                                 <div class="row m-4">
-                                    <p id="TestimonialText" >"Reagan is a highly skilled individual that would be an asset to any company or team that he is part of. His friendly personality makes him a pleasure to be around. With these qualities, it makes him the best candidate for prospective companies."</p>
+                                    <p id="TestimonialText">"Reagan is a highly skilled individual that would be an
+                                        asset to any company or team that he is part of. His friendly personality makes
+                                        him a pleasure to be around. With these qualities, it makes him the best
+                                        candidate for prospective companies."</p>
                                 </div>
                             </div>
-                            <div id="Slider">
+                            <div class="bg-light shadow-lg" id="Slider">
                                 <div class="row m-4">
                                     <div class="col-md-4">
-                                        <img id="TestimonialImage" class="img-fluid d-block h-100 w-100" src="./images/Portfolio_Images/Emile (3).jpg">
+                                        <img id="TestimonialImage" class="img-fluid d-block h-100 w-100"
+                                            src="./images/Portfolio_Images/Emile (3).jpg">
                                     </div>
                                     <div class="col-md-8">
                                         <h2> Emile Van Wyk</h2>
@@ -640,7 +685,12 @@
                                     </div>
                                 </div>
                                 <div class="row m-4">
-                                    <p id="TestimonialText" >"Reagan Carolussen, great attitude, intuitive, Dedicated, Intelligent, these are a few words to describe him. He is a burst of fresh air, easy to talk to and fun loving,  he is a diligent individual when it comes to gaining knowledge and applying it proactively, always keeping ahead of the times with a great work ethic and energy for collaboration and assisting others when they need it."</p>
+                                    <p id="TestimonialText">"Reagan Carolussen, great attitude, intuitive, Dedicated,
+                                        Intelligent, these are a few words to describe him. He is a burst of fresh air,
+                                        easy to talk to and fun loving, he is a diligent individual when it comes to
+                                        gaining knowledge and applying it proactively, always keeping ahead of the times
+                                        with a great work ethic and energy for collaboration and assisting others when
+                                        they need it."</p>
                                 </div>
                             </div>
                         </div>
@@ -648,10 +698,11 @@
                     </div>
                     <div class=" h-100 w-100 carousel-item">
                         <div class="d-block d-md-flex gap-5 justify-content-between">
-                            <div id="Slider">
+                            <div class="bg-light shadow-lg" id="Slider">
                                 <div class="row m-4">
                                     <div class="col-md-4">
-                                        <img id="TestimonialImage" class="img-fluid d-block" src="./images/Portfolio_Images/Cassidy (1).jpg">
+                                        <img id="TestimonialImage" class="img-fluid d-block"
+                                            src="./images/Portfolio_Images/Cassidy (1).jpg">
                                     </div>
                                     <div class="col-md-8">
                                         <h2> Cassidy Manuel</h2>
@@ -660,14 +711,16 @@
                                 </div>
                                 <div class="row m-4">
                                     <div class="col-12">
-                                        <p id="TestimonialText" >"Reagan is a smart, hardworking and fast learner. He has an amazing positive attitude and thrives in a team work environment."</p>
+                                        <p id="TestimonialText">"Reagan is a smart, hardworking and fast learner. He has
+                                            an amazing positive attitude and thrives in a team work environment."</p>
                                     </div>
                                 </div>
                             </div>
-                            <div id="Slider">
+                            <div class="bg-light shadow-lg" id="Slider">
                                 <div class="row m-4">
                                     <div class="col-md-4">
-                                        <img id="TestimonialImage" class="img-fluid d-block h-100 w-100" src="./images/Portfolio_Images/Daniel (2).jpg">
+                                        <img id="TestimonialImage" class="img-fluid d-block h-100 w-100"
+                                            src="./images/Portfolio_Images/Daniel (2).jpg">
                                     </div>
                                     <div class="col-md-8">
                                         <h2> Daniel Fredericks</h2>
@@ -675,7 +728,11 @@
                                     </div>
                                 </div>
                                 <div class="row m-4">
-                                    <p id="TestimonialText" >"Reagan is good at his work and shows a lot of originality with each task. As a colleague it has been inspiring working alongside him and am looking forward to seeing how he will progress in the future. Based on his understanding of the concepts being taught I believe that he has the potential to become a asset for whomever would hire him."</p>
+                                    <p id="TestimonialText">"Reagan is good at his work and shows a lot of originality
+                                        with each task. As a colleague it has been inspiring working alongside him and
+                                        am looking forward to seeing how he will progress in the future. Based on his
+                                        understanding of the concepts being taught I believe that he has the potential
+                                        to become a asset for whomever would hire him."</p>
                                 </div>
                             </div>
                         </div>
@@ -683,26 +740,30 @@
 
                     <div class=" h-100 w-100 carousel-item">
                         <div class="d-block d-md-flex gap-5 justify-content-between">
-                            <div class="container" id="Slider">
+                            <div class="bg-light shadow-lg" id="Slider">
                                 <div class="row m-4">
-                                    <div class="container">
-                                        <div class="col-md-4">
-                                            <img id="LecturerImage" class="img-fluid d-block h-100 w-100" src="./images/Portfolio_Images/joel2.jpg">
-                                        </div>
-                                        <div class="col-md-8">
-                                            <h2> Joel Mukanya</h2>
-                                            <h4> Coding Lecturer, Life Choices </h4>
-                                        </div>
+                                    <div class="col-md-4">
+                                        <img id="LecturerImage" class="img-fluid d-block h-100 w-100"
+                                            src="./images/Portfolio_Images/joel2.jpg">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h2> Joel Mukanya</h2>
+                                        <h4> Coding Lecturer, Life Choices </h4>
                                     </div>
                                 </div>
                                 <div class="row m-4">
-                                    <p id="TestimonialText" >"I enjoy having Reagan in my class.  He demonstrates a fantastic understanding of the materials we are learning in class. Reagan has proven to have an exhaustive understanding of the HTML, CSS & Bootstrap topics we have been studying. Reagan uses his past experience in coding to assist other students. I recommend him."</p>
+                                    <p id="TestimonialText">"I enjoy having Reagan in my class. He demonstrates a
+                                        fantastic understanding of the materials we are learning in class. Reagan has
+                                        proven to have an exhaustive understanding of the HTML, CSS & Bootstrap topics
+                                        we have been studying. Reagan uses his past experience in coding to assist other
+                                        students. I recommend him."</p>
                                 </div>
                             </div>
-                            <div id="Slider">
+                            <div class="bg-light shadow-lg" id="Slider">
                                 <div class="row m-4">
                                     <div class="col-md-4">
-                                        <img id="LecturerImage" class="img-fluid d-block h-100 w-100" src="./images/Portfolio_Images/godwin-2.jfif">
+                                        <img id="LecturerImage" class="img-fluid d-block h-100 w-100"
+                                            src="./images/Portfolio_Images/godwin-2.jfif">
                                     </div>
                                     <div class="col-md-8">
                                         <h2> Godwin Dzvapatsva</h2>
@@ -710,7 +771,9 @@
                                     </div>
                                 </div>
                                 <div class="row m-4">
-                                    <p id="TestimonialText" >"Reagan has a pleasant personality, which allows him to work with any of his classmates. He submits projects that are well done. I recommend Reagan."</p>
+                                    <p id="TestimonialText">"Reagan has a pleasant personality, which allows him to work
+                                        with any of his classmates. He submits projects that are well done. I recommend
+                                        Reagan."</p>
                                 </div>
                             </div>
                         </div>
@@ -723,84 +786,100 @@
     <section id="Contact">
         <div class="container my-5 text-center">
             <h4 class="my-5 fs-1">Looking For Me?</h4>
-                    <form action="https://formspree.io/f/mpzbkrjo" class="w-100 my-5 py-5 mx-auto" method="post">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div id="InputContainer" class="col-md-12">
-                                    <input type="text" name="name" id="name" placeholder="Enter your Full Name" class=" py-4 form-control" required>
-                                    <label for="name">
-                                        <i id="ContactIcon" class="bi bi-person"></i>
-                                    </label>
-                                </div>
-                            </div>
+            <form action="https://formspree.io/f/mpzbkrjo" class="w-100 my-5 py-5 mx-auto" method="post">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div id="InputContainer" class="col-md-12">
+                            <input type="text" name="name" id="name" placeholder="Enter your Full Name"
+                                class=" py-4 form-control" required>
+                            <label for="name">
+                                <i id="ContactIcon" class="bi bi-person"></i>
+                            </label>
+                        </div>
+                    </div>
 
-                            <div class="col-md-4">
-                                <div id="InputContainer" class="col-md-12">
-                                    <input type="email" name="email" id="Email" placeholder="Enter your Email" class=" py-4 form-control" required>
-                                    <label for="email">
-                                        <i id="ContactIcon" class="bi bi-envelope"></i>
-                                    </label>
-                                </div>
-                            </div>
-    
-                            <div class="col-md-4">
-                                <div id="InputContainer" class="col-md-12">
-                                    <input type="text" name="subject" id="Subject" placeholder="Enter your Subject" class=" py-4 form-control" required>
-                                    <label for="subject">
-                                        <i id="ContactIcon" class="bi bi-check2-square"></i>
-                                    </label>
-                                </div>
-                            </div>
+                    <div class="col-md-4">
+                        <div id="InputContainer" class="col-md-12">
+                            <input type="email" name="email" id="Email" placeholder="Enter your Email"
+                                class=" py-4 form-control" required>
+                            <label for="email">
+                                <i id="ContactIcon" class="bi bi-envelope"></i>
+                            </label>
                         </div>
-                        <div class="row mt-5">
-                            <div id="InputContainer" class="col-md-12">
-                                <textarea type="text" name="message" id="message" placeholder="Send me a message" class=" py-4 form-control"></textarea>
-                                <label id="MessageIcon" for="message"> <i class="bi bi-pencil-square"></i> </label>
-                            </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div id="InputContainer" class="col-md-12">
+                            <input type="text" name="subject" id="Subject" placeholder="Enter your Subject"
+                                class=" py-4 form-control" required>
+                            <label for="subject">
+                                <i id="ContactIcon" class="bi bi-check2-square"></i>
+                            </label>
                         </div>
-                        <div class="row mt-5 text-start">
-                            <div class="col-md-12">
-                                <button type="submit" class="btn btn-primary p-4"> Send Now! </button>
-                            </div>
-                        </div>
-                </form>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div id="InputContainer" class="col-md-12">
+                        <textarea type="text" name="message" id="message" placeholder="Send me a message"
+                            class=" py-4 form-control"></textarea>
+                        <label id="MessageIcon" for="message"> <i class="bi bi-pencil-square"></i> </label>
+                    </div>
+                </div>
+                <div class="row mt-5 text-start">
+                    <div class="col-md-12">
+                        <button id="customBtn" type="submit" class="p-4"> Send Now! </button>
+                    </div>
+                </div>
+            </form>
         </div>
     </section>
 
-    <footer class="bg-primary mx-3" style="height:50vh;">
+    <footer style="background-color: #190844;" class="mx-3">
         <div class="container text-center">
             <div class="row">
                 <div class="col-md-4">
                     <div class="headingContainer">
-                        <h2 id="footerHeadingCircle" class=" pt-5 pb-4 text-white fs-2"> Email   <i class="bi bi-envelope"></i></h2>
-                        <p id="footerIcon" class="fs-4">kingreggie702@gmail</p>
+                        <h2 class=" pt-5 pb-4 text-white fs-3"> Github <a id="footerIcon" target="_blank"
+                                href="https://github.com/Reagan701/"> <i class="bi bi-github"></i></a></h2>
+                        <p id="footerText" class="fs-5 pb-4"><a id="footerIcon" target="_blank"
+                                href="https://github.com/Reagan701/"> Reagan701 <i class="bi bi-github"></i></a></p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="headingContainer">
-                        <h2 id="footerHeadingCircle" class=" pt-5 pb-4 text-white fs-2"> Github   <a href="https://github.com/Reagan701/"><i class="bi bi-envelope"></i></a></h2>
-                        <p id="footerIcon" class="fs-4 pb-4">Reagan701</p>
+                        <h2 class=" pt-5 pb-4 text-white fs-3"> Linkedin <a id="footerIcon" target="_blank"
+                                href="https://www.linkedin.com/in/reagan-carolussen-03054823a/"><i
+                                    class="bi bi-linkedin"></i></a></h2>
+                        <p id="footerText" class="fs-5 pb-4"><a id="footerIcon" target="_blank"
+                                href="https://www.linkedin.com/in/reagan-carolussen-03054823a/"> Reagan Carolussen <i
+                                    class="bi bi-linkedin"></i></a></p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="headingContainer">
-                        <h2 id="footerHeadingCircle" class=" pt-5 pb-4 text-white fs-2"> LinkedIn   <i class="bi bi-envelope"></i></h2>
-                        <p id="footerIcon" class="fs-4">Reagan Carolussen</p>
+                        <h2 class=" pt-5 pb-4 text-white fs-3"> CodePen <a id="footerIcon" target="_blank"
+                                href="https://codepen.io/reagan701"><i class="fa-brands fa-codepen"></i></a></h2>
+                        <p id="footerText" class="fs-5 pb-4"><a id="footerIcon" target="_blank"
+                                href="https://codepen.io/reagan701"> Reagan701 <i class="fa-brands fa-codepen"></i></a>
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="row border-top">
-                <p id="footerIcon" class=" pt-5 pb-4 fs-3"> Reagan Carolussen &copy; Copyright </p>
-                <p id="footerIcon" class=" pt-5 pb-4 fs-3"> Made by Reagan Carolussen  </p>
+                <p id="footerText" class=" pt-5 fs-4"> Reagan Carolussen 2022 &copy; Copyright </p>
+                <p id="footerText" class=" pt-4 fs-4"> Made by Reagan Carolussen </p>
             </div>
         </div>
     </footer>
 
     <script src="./script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
 </body>
+
 </html>

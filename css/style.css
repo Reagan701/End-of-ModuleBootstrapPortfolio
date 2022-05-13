@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-html, body{
+html,
+body {
     overflow-x: hidden;
 }
+
 #Landing {
 
     background:
@@ -16,72 +18,83 @@ html, body{
     background-attachment: fixed;
 }
 
-#footerIcon{
+#customBtn {
+    border-color: #190844;
+    color: #190844;
+    font-weight: 900;
+    background-color: transparent;
+    border: 3px solid #190844;
+    transition: all 0.2s ease-in-out;
+}
+
+#customBtn:hover {
+    background-color: #190844;
     color: white;
 }
 
-#InputContainer, .headingContainer{
+#projectBtn {
+    min-width: 100px;
+    border-color: white;
+    color: white;
+    font-weight: 900;
+    background-color: transparent;
+    border: 3px solid white;
+    transition: all 0.2s ease-in-out;
+}
+
+#projectBtn:hover {
+    background-color: white;
+    color: #190844;
+}
+
+#footerText {
+    color: white;
+}
+
+#footerIcon,
+#navbarIcon {
+    color: inherit;
+}
+
+#footerIcon:hover {
+    color: #3506ac;
+}
+
+#navbarIcon:hover {
+    color: #3506ac;
+}
+
+#InputContainer,
+.headingContainer {
     position: relative;
 }
 
-#headingCircle::before{
+#headingCircle::before,
+#projectHeadingCircle::before,
+#testimonialHeadingCircle::before,
+#leftHeadingCircle::before {
     position: absolute;
     content: '';
     width: 0.75rem;
     height: 0.75rem;
     border-radius: 50%;
     background-color: #ff885e;
-    top: 35px;
-    left: -15px;
 }
 
-#projectHeadingCircle::before{
-    position: absolute;
-    content: '';
-    width: 0.75rem;
-    height: 0.75rem;
-    border-radius: 50%;
-    background-color: #ff885e;
-    top: 40px;
-    left: 288px;
-}
-
-#testimonialHeadingCircle::before{
-    position: absolute;
-    content: '';
-    width: 0.75rem;
-    height: 0.75rem;
-    border-radius: 50%;
-    background-color: #ff885e;
-    top: 40px;
-    left: 325px;
-}
-
-#footerHeadingCircle::before{
-    position: absolute;
-    content: '';
-    width: 0.75rem;
-    height: 0.75rem;
-    border-radius: 50%;
-    background-color: #ff885e;
-    top: 70px;
-    left: 140px;   
-}
-
-.btn{
+.btn {
     border-radius: 0% !important;
 }
 
-#MessageIcon{
+#MessageIcon {
     position: absolute;
     top: 1.75rem;
-    right:2rem;
+    right: 2rem;
 }
 
-#ContactIcon{
+#ContactIcon {
     position: absolute;
     top: 1.563rem;
-    right:1.25rem;
+    right: 1.25rem;
 }
 
 h1,
@@ -94,22 +107,28 @@ h5 {
     color: #190844;
 }
 
-button{
+button {
     font-family: 'Open Sans', sans-serif;
 }
 
-#navText{
+#navText {
     color: #190844;
     font-weight: 900;
 }
 
-p, a, li {
+p,
+a,
+li {
     font-family: 'Open Sans', sans-serif;
     color: #190844;
 }
 
+ul, li, p{
+    font-weight: 800;
+}
+
 #Skills img {
-    max-width: 50px;
+    max-width: 3.125rem;
 }
 
 #ProgressBarTop {
@@ -127,32 +146,33 @@ p, a, li {
 .projects-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 1.875rem;
     justify-content: space-between;
 }
 
 .projects-container img {
-    height: 400px;
-    max-width: 400px;
+    height: 25rem;
+    max-width: 25rem;
     flex-grow: 1;
     object-fit: cover;
 }
 
-#TestimonialText:first-letter{
+#TestimonialText:first-letter {
     font-size: 1.5rem;
     font-weight: 700;
 }
 
 
-#EducationImage{
-    object-fit:contain;
-    max-width: 225px;
-    height:225px;
+#EducationImage {
+    object-fit: contain;
+    max-width: 14.063rem;
+    height: 14.063rem;
 }
 
 #EducationContainer {
     position: relative;
-    min-height: 24.988rem;
+    min-height: 500px;
+    border: 4px solid #190844;
 }
 
 #EducationCircle::before {
@@ -160,31 +180,33 @@ p, a, li {
     content: '';
     width: 1.5rem;
     height: 1.5rem;
-    border: 3px solid black;
+    border: 0.188rem solid black;
     border-radius: 50%;
     background-color: white;
-    left: -0.688rem;
+    left: -0.87rem;
 }
 
-#ProfessionalImage, #TestimonialImage,#LecturerImage {
+#ProfessionalImage,
+#TestimonialImage,
+#LecturerImage {
     object-fit: cover;
 }
 
-#TestimonialImage{
-    width: 400px !important;
-    max-height: 400px !important;
+#TestimonialImage {
+    width: 25rem !important;
+    max-height: 25rem !important;
 }
 
-#LecturerImage{
-    width: 166px !important;
-    height: 250px !important;
+#LecturerImage {
+    width: 10.375rem !important;
+    height: 15.625rem !important;
 }
 
 .imgContainer {
     position: relative;
 }
 
-#hoverText{
+#hoverText {
     font-size: 1.65em;
     color: white;
 }
@@ -197,7 +219,7 @@ p, a, li {
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 30px;
+    padding: 1.875rem;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -209,31 +231,56 @@ p, a, li {
     opacity: 1;
 }
 
-@media screen and (max-width:766px) {
+@media screen and (max-width:768px) {
     #Right-Arrow {
         display: none;
     }
-    
-    #BootstrapIcon{
-        position:absolute;
+
+    #hoverOverText {
+        display: none;
+    }
+
+    #headingCircle::before {
+        top: 1.563rem;
+        left: -0.8rem;
+    }
+
+    #leftHeadingCircle::before {
+        top: 1.563rem;
+        left: -0.625rem;
+    }
+
+    #projectHeadingCircle::before {
+        top: 3.75rem;
+        left: 0rem;
+    }
+
+    #testimonialHeadingCircle::before {
+        top: 1.563rem;
+        left: 0.625rem;
+    }
+
+    #BootstrapIcon {
+        position: absolute;
         object-fit: cover;
         min-height: 3.125rem;
         width: 3.125rem;
         bottom: 0.063rem;
-        left:7.188rem;
+        left: 7.188rem;
     }
-    #CIcon{
-        position:absolute;
+
+    #CIcon {
+        position: absolute;
         object-fit: cover;
         min-height: 3.125rem;
         width: 3.125rem;
-        left:7.188rem;
+        left: 7.188rem;
     }
 
-    #Slider{
-        border:2px solid rgb(228, 218, 218);
+    #Slider {
+        border: 4px solid #190844;
         width: 100%;
-        min-height: 748px;
+        min-height: 46.75rem;
     }
 
     #Left-Arrow {
@@ -246,31 +293,55 @@ p, a, li {
         display: none;
     }
 
-    #Slider{
-        border:2px solid rgb(228, 218, 218);
-        width: 50%;
-        height: 496px;
+    #clickText {
+        display: none;
+        opacity: 0.5;
     }
 
-    #BootstrapIcon{
+    #headingCircle::before,
+    #leftHeadingCircle::before {
+        top: 2.188rem;
+        left: -0.938rem;
+    }
+
+    #leftHeadingCircle::before {
+        top: 2.188rem;
+        left: -0.938rem;
+    }
+
+    #projectHeadingCircle::before {
+        top: 2.5rem;
+        left: 18rem;
+    }
+
+    #testimonialHeadingCircle::before {
+        top: 2.5rem;
+        left: 23rem;
+    }
+
+    #Slider {
+        border: 4px solid #190844;
+        width: 50%;
+        height: 31rem;
+    }
+
+    #BootstrapIcon {
         object-fit: cover;
         min-height: 3.125rem;
         width: 3.125rem;
     }
-    /*
-    #CIcon{
-        position:absolute;
-        left: 7.313rem;
-    } */
     #Up-Arrow {
         display: none;
     }
 }
 
-input[type="text"], input[type="email"]{
+input[type="text"],
+input[type="email"] {
     border-radius: 0%;
+    border:2px solid #190844;
 }
 
-textarea[type="text"]{
+textarea[type="text"] {
     border-radius: 0%;
+    border:2px solid #190844;
 }
