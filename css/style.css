@@ -4,21 +4,68 @@
 html, body{
     overflow-x: hidden;
 }
-
 #Landing {
 
     background:
-        linear-gradient(rgba(79, 79, 79, 0.85),
-            rgba(41, 9, 9, 0.45)),
-        url(https://picsum.photos/1080/?random=14);
+        linear-gradient(rgba(16, 78, 184, 0.5),
+            rgba(3, 62, 199, 0.5)),
+        url(/images/Landing_Image/forest-g3ac2318a8_1920.jpg);
 
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-#InputContainer{
+#footerIcon{
+    color: white;
+}
+
+#InputContainer, .headingContainer{
     position: relative;
+}
+
+#headingCircle::before{
+    position: absolute;
+    content: '';
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color: #ff885e;
+    top: 35px;
+    left: -15px;
+}
+
+#projectHeadingCircle::before{
+    position: absolute;
+    content: '';
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color: #ff885e;
+    top: 40px;
+    left: 288px;
+}
+
+#testimonialHeadingCircle::before{
+    position: absolute;
+    content: '';
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color: #ff885e;
+    top: 40px;
+    left: 325px;
+}
+
+#footerHeadingCircle::before{
+    position: absolute;
+    content: '';
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color: #ff885e;
+    top: 70px;
+    left: 140px;   
 }
 
 .btn{
@@ -51,6 +98,11 @@ button{
     font-family: 'Open Sans', sans-serif;
 }
 
+#navText{
+    color: #190844;
+    font-weight: 900;
+}
+
 p, a, li {
     font-family: 'Open Sans', sans-serif;
     color: #190844;
@@ -79,17 +131,18 @@ p, a, li {
     justify-content: space-between;
 }
 
-#TestimonialText:first-letter{
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
 .projects-container img {
     height: 400px;
     max-width: 400px;
     flex-grow: 1;
     object-fit: cover;
 }
+
+#TestimonialText:first-letter{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
 
 #EducationImage{
     object-fit:contain;
@@ -160,7 +213,7 @@ p, a, li {
     #Right-Arrow {
         display: none;
     }
-
+    
     #BootstrapIcon{
         position:absolute;
         object-fit: cover;
@@ -180,7 +233,7 @@ p, a, li {
     #Slider{
         border:2px solid rgb(228, 218, 218);
         width: 100%;
-        height: 498px;
+        min-height: 748px;
     }
 
     #Left-Arrow {
@@ -196,6 +249,7 @@ p, a, li {
     #Slider{
         border:2px solid rgb(228, 218, 218);
         width: 50%;
+        height: 496px;
     }
 
     #BootstrapIcon{
