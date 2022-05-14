@@ -2,7 +2,7 @@ function ChangeBg(){
     var navbar = document.getElementById("navbar");
     var scrollValue = window.scrollY;
     var screenwidth = screen.width;
-    if(scrollValue <200 && screenwidth >1024){
+    if(scrollValue <200 || screenwidth >1024){
         navbar.style.background = "transparent";
         navbar.style.border = "0px solid black"
         navbar.style.margin = "0px";
