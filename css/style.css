@@ -283,7 +283,7 @@ ul, li, p{
         background-color: white;
     }
     #navBarSize,#nameNavText{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     #projectHeadingCircle::before {
         top: 2rem;
@@ -323,11 +323,6 @@ ul, li, p{
 @media screen and (max-width:768px) {
     #Right-Arrow {
         display: none;
-    }
-
-    #navNameHead{
-        margin-left: 1rem;
-        text-align: center;
     }
 
     #technicalSkillsColorSwitch{
@@ -393,10 +388,6 @@ ul, li, p{
 @media screen and (min-width:767px) {
     #Down-Arrow {
         display: none;
-    }
-
-    #navNameHead{
-        margin-left: 3rem;
     }
 
     #clickText {
