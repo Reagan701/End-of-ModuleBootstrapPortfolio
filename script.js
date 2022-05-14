@@ -1,11 +1,16 @@
+let beenClicked = false;
 let hasChanged;
 
 function ChangeBg(){
     var navbar = document.getElementById("navbar");
     var scrollValue = window.scrollY;
     var screenwidth = screen.width;
+    if(screenwidth>768){
+        beenClicked=false;
+    }
+
     if(!beenClicked){
-        if(scrollValue <200 || screenwidth >1024){
+        if(scrollValue <200){
             hasChanged = false;
             navbar.style.background = "transparent";
             navbar.style.border = "0px solid black";
@@ -22,7 +27,6 @@ function ChangeBg(){
     console.log(scrollValue);
 }
 
-let beenClicked = false;
 
 function backgroundClick(){
     beenClicked = !beenClicked;
