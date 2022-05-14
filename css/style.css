@@ -260,7 +260,7 @@ ul, li, p{
 
     #testimonialHeadingCircle::before {
         top: 1.563rem;
-        left: 0.625rem;
+        left: 1.5rem;
     }
 
     #BootstrapIcon {
