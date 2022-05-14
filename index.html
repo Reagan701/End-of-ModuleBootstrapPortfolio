@@ -15,18 +15,20 @@
 </head>
 
 <body class="bg-white">
-
-    <nav id="navbar" class=" p-0 navbar text-center fixed-top navbar-expand-lg navbar-light">
-        <div class="container p-3 mt-2">
-            <a href="#Landing" id="navText" class="fs-1 navbar-brand"> Reagan Carolussen </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" id="navbarNavAltMarkup"></span>
-            </button>
+    
+    <nav id="navbar" class="p-0 navbar text-center fixed-top navbar-expand-lg navbar-light">
+        <div class="container p-3 mt-1">
+            <div id="navNameHead">
+                <a href="#Landing" id="nameNavText" class=" navbar-brand"> Reagan Carolussen </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
 
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav mx-auto">
-                    <div class="navbar-nav fs-4 d-flex">
+                <div id="navBarSize" class="navbar-nav mx-auto">
+                    <div class="navbar-nav d-flex">
                         <a id="navText" class="nav-link" href="#Landing"> Home</a>
                         <a id="navText" class="nav-link" href="#About"> About</a>
                         <a id="navText" class="nav-link" href="#Projects"> Projects</a>
@@ -35,9 +37,8 @@
                     </div>
                 </div>
 
-
-                <div class="navbar-nav mx-auto">
-                    <div class="navbar-nav fs-4 d-flex">
+                <div id="navBarSize" class="navbar-nav mx-auto">
+                    <div class="navbar-nav d-flex">
                         <a id="navbarIcon" class="nav-link" href="https://github.com/Reagan701/" target="_blank"> <i
                                 class="bi bi-github"></i></a>
                         <a id="navbarIcon" class="nav-link"
@@ -56,12 +57,12 @@
     <section id="Landing" class="container-fluid vh-100">
         <div class="container d-flex flex-column justify-content-center align-items-center text-black h-100">
             <div class="row w-100 ms-5">
-                <div class="col-8">
+                <div class="col-lg-8">
                     <div data-aos="fade-up" data-aos-duration="500">
-                        <h1 class="display-1 mb-4">Hi, I am Reagan</h1>
+                        <h1 id="landingHead" class="display-1 mb-4">Hi, I am Reagan</h1>
                     </div>
                     <div data-aos="fade-up" data-aos-duration="1000">
-                        <h4 class="my-5 display-4">An Aspiring Web-Developer</h4>
+                        <h4 id="landingHeading" class="my-5 display-4">An Aspiring Web-Developer</h4>
                     </div>
                     <div data-aos="zoom-in">
                         <a href="#Contact"><button id="customBtn" class=" mt-3 px-4 py-3 fs-3"> Contact Me </button></a>
@@ -76,7 +77,8 @@
             <div class="row mb-5">
                 <div class="text-center col-md-12">
                     <h1>Front-End Development</h1>
-                    <p class="fs-5"> I use HTML5, CSS3 and Bootstrap, to develop high quality and professional looking sites </p>
+                    <p class="fs-5"> I use HTML5, CSS3 and Bootstrap, to develop high quality and professional looking
+                        sites </p>
                 </div>
             </div>
 
@@ -93,7 +95,7 @@
                             <div class="col-md-12">
                                 <div data-aos="fade-left">
                                     <div class="headingContainer">
-                                        <h2 id="headingCircle"> About Me </h2>
+                                        <h2 class="aboutHead" id="headingCircle"> About Me </h2>
                                     </div>
                                 </div>
                                 <div data-aos="fade-left">
@@ -194,81 +196,83 @@
                     <!-- Technical Skills -->
                     <div class="row my-5 d-flex">
                         <div data-aos="zoom-in-left" class="col-md-6 d-flex justify-content-center align-items-center">
-                            <h2> Technical Skills <i id="Right-Arrow" class="bi bi-arrow-right"></i> <i id="Down-Arrow"
-                                    class="bi bi-arrow-down"></i> </h2>
+                            <div id="zoomText">
+                                <h2 id="technicalSkillsColorSwitch"> Technical Skills <i id="Right-Arrow" class="bi bi-arrow-right"></i> <i id="Down-Arrow"
+                                        class="bi bi-arrow-down"></i> </h2>
+                            </div>
                         </div>
-                        <div class="col-md-3">
-                            <div data-aos="flip-up" class="mb-5" style="position: relative;">
+                        <div id="borderAnim" class="col-md-3">
+                            <div class="mb-5" style="position: relative;">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h4> HTML </h4>
                                     <img class="img-fluid w-25" src="./images/Skill_Icons/html-5-icon.png"
                                         alt="HTML Image">
                                     <h4> 90% </h4>
                                 </div>
-                                <div class="progress" id="ProgressBarTop" style="width:90%">
-                                    <div class="progress-bar" role="progressbar"
+                                <div class="progress" id="ProgressBarTop" style="border-radius:0%; width:90%">
+                                    <div data-aos="zoom-in-right" class="progress-bar" role="progressbar"
                                         style="background-color: #ea3a23 ;width: 100%;" aria-valuenow="100"
                                         aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
-                                <div class="progress">
+                                <div class="progress" style="border-radius: 0%;" >
                                     <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                                         aria-valuemax="100"></div>
                                 </div>
                             </div>
-                            <div data-aos="flip-up" class="my-5" style="position: relative;">
+                            <div class="my-5" style="position: relative;">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h4> CSS </h4>
                                     <img class="img-fluid w-25 ms-3" src="./images/Skill_Icons/css-3-icon.png"
                                         alt="CSS Image">
                                     <h4> 75% </h4>
                                 </div>
-                                <div class="progress" id="ProgressBarTop" style="width:75%">
-                                    <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="0"
+                                <div class="progress" id="ProgressBarTop" style="border-radius: 0%; width:75%">
+                                    <div data-aos="zoom-in-right" class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="0"
                                         aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
-                                <div class="progress">
+                                <div style="border-radius: 0%;" class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                                        aria-valuemax="100"></div>
+                                        aria-valuemax="100" ></div>
                                 </div>
                             </div>
-                            <div data-aos="flip-up" class="my-5" style="position: relative;">
+                            <div class="my-5" style="position: relative;">
                                 <div class="d-flex mt-5 mb-1 justify-content-between align-items-center">
                                     <h4> Unity </h6>
                                         <img src="./images/Skill_Icons/unity-69-logo-black-and-white.png"
                                             alt="Unity Logo">
                                         <h4> 70% </h6>
                                 </div>
-                                <div class="progress" id="ProgressBarTop" style="width:70%;">
-                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;"
+                                <div class="progress" id="ProgressBarTop" style="border-radius: 0%;width:70%;">
+                                    <div data-aos="zoom-in-right" class="progress-bar bg-dark" role="progressbar" style="width: 100%;"
                                         aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
-                                <div class="progress">
+                                <div style="border-radius: 0%;" class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                                         aria-valuemax="100"></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div data-aos="flip-up" class="mb-5" style="position: relative;">
+                            <div class="mb-5" style="position: relative;">
                                 <div style="position: relative;"
-                                    class=" d-flex justify-content-between align-items-center"">
+                                    class=" d-flex justify-content-between align-items-center">
                                         <h4> Bootstrap </h4>
                                         <img class=" img-fluid w-25" id="BootstrapIcon"
                                     src="./images/Skill_Icons/Bootstrap_logo.svg.png" alt="Bootstrap Logo">
                                     <h4> 65% </h4>
                                 </div>
 
-                                <div class="progress" id="ProgressBarTop" style="width:65%;">
-                                    <div class="progress-bar" role="progressbar"
+                                <div class="progress" id="ProgressBarTop" style="border-radius: 0%;width:65%;">
+                                    <div data-aos="zoom-in-right" class="progress-bar" role="progressbar"
                                         style="background-color: #7309f5; width: 100%;" aria-valuenow="0"
                                         aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
-                                <div class="progress">
+                                <div style="border-radius: 0%" class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                                         aria-valuemax="100"></div>
                                 </div>
                             </div>
-                            <div data-aos="flip-up" class="my-5" style="position: relative;">
+                            <div class="my-5" style="position: relative;">
                                 <div style="min-height:50px;"
                                     class="d-flex mb-1 justify-content-between align-items-center">
                                     <h4> C# </h4>
@@ -277,29 +281,29 @@
                                     <h4> 80% </h4>
                                 </div>
 
-                                <div class="progress" id="ProgressBarTop" style="width:80%">
-                                    <div class="progress-bar" role="progressbar"
+                                <div class="progress" id="ProgressBarTop" style="border-radius:0%;width:80%">
+                                    <div data-aos="zoom-in-right" class="progress-bar" role="progressbar"
                                         style="background-color: #75217d; width: 100%;" aria-valuenow="0"
                                         aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
-                                <div class="progress">
+                                <div style="border-radius: 0%;" class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                                         aria-valuemax="100"></div>
                                 </div>
                             </div>
-                            <div data-aos="flip-up" class="my-5" style="position: relative;">
+                            <div class="my-5" style="position: relative;">
                                 <div class="d-flex mt-5 mb-1 justify-content-between align-items-center">
                                     <h4> Modelling </h4>
                                     <img src="./images/Skill_Icons/autodesk-maya.png" alt="Maya Logo" class="img-fluid">
                                     <h4> 50% </h4>
                                 </div>
 
-                                <div class="progress" id="ProgressBarTop" style="width:50%">
-                                    <div class="progress-bar" role="progressbar"
+                                <div class="progress" id="ProgressBarTop" style="border-radius: 0%; width:50%">
+                                    <div data-aos="zoom-in-right" class="progress-bar" role="progressbar"
                                         style="background-color: #33bdcd; width: 100%;" aria-valuenow="0"
                                         aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
-                                <div class="progress">
+                                <div style="border-radius:0%;" class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                                         aria-valuemax="100"></div>
                                 </div>
@@ -313,79 +317,81 @@
 
                     <div class="row py-5 my-5">
                         <div class="col-md-3">
-                            <div data-aos="flip-up" class="my-5" style=" position: relative;">
+                            <div class="my-5" style=" position: relative;">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h4> Time-Management </h4>
-                                    <i class="bi bi-clock-fill"></i>
+                                    <i class="mb-2 bi bi-clock-fill"></i>
                                     <h4> 95% </h4>
                                 </div>
-                                <div class="progress" id="ProgressBarTop" style="width:95%">
-                                    <div class="progress-bar" role="progressbar"
+                                <div class="progress" id="ProgressBarTop" style="border-radius: 0%; width:95%">
+                                    <div data-aos="zoom-in-right" class="progress-bar" role="progressbar"
                                         style=" background-color: #ea3a23 ; width: 100%;" aria-valuenow="0"
                                         aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
-                                <div class="progress">
+                                <div style="border-radius:0%" class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                                         aria-valuemax="100"></div>
                                 </div>
                             </div>
-                            <div data-aos="flip-up" class="my-5" style="position: relative;">
+                            <div class="my-5" style="position: relative;">
                                 <div class="d-flex justify-content-between">
                                     <h4> Teamwork </h4>
                                     <i class="bi bi-people-fill"></i>
                                     <h4> 80% </h4>
                                 </div>
 
-                                <div class="progress" id="ProgressBarTop" style="width:80%">
-                                    <div class="progress-bar" role="progressbar"
+                                <div class="progress" id="ProgressBarTop" style="border-radius: 0%; width:80%">
+                                    <div data-aos="zoom-in-right" class="progress-bar" role="progressbar"
                                         style="background-color: #3395cd; width: 100%;" aria-valuenow="0"
                                         aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
-                                <div class="progress">
+                                <div style="border-radius: 0%;" class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                                         aria-valuemax="100"></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div data-aos="flip-up" class="my-5" style="position: relative;">
+                            <div class="my-5" style="position: relative;">
                                 <div class="d-flex justify-content-between">
                                     <h4> Communication </h4>
                                     <i class="bi bi-person-lines-fill"></i>
                                     <h4> 95% </h4>
                                 </div>
 
-                                <div class="progress" id="ProgressBarTop" style="width:95%">
-                                    <div class="progress-bar" role="progressbar"
+                                <div class="progress" id="ProgressBarTop" style="border-radius:0%; width:95%">
+                                    <div data-aos="zoom-in-right" class="progress-bar" role="progressbar"
                                         style="background-color: greenyellow; width: 100%;" aria-valuenow="0"
                                         aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
-                                <div class="progress">
+                                <div style="border-radius: 0%;" class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                                         aria-valuemax="100"></div>
                                 </div>
                             </div>
-                            <div data-aos="flip-up" class="my-5" style="position: relative;">
+                            <div class="my-5" style="position: relative;">
                                 <div class="d-flex justify-content-between">
                                     <h4> Problem-Solving </h4>
                                     <i class="bi bi-screwdriver"></i>
                                     <h4> 70% </h4>
                                 </div>
 
-                                <div class="progress" id="ProgressBarTop" style="width:70%">
-                                    <div class="progress-bar" role="progressbar"
+                                <div class="progress" id="ProgressBarTop" style="border-radius:0%;width:70%">
+                                    <div data-aos="zoom-in-right" class="progress-bar" role="progressbar"
                                         style="background-color: orange; width: 100%;" aria-valuenow="0"
                                         aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
-                                <div class="progress">
+                                <div style="border-radius: 0%" class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                                         aria-valuemax="100"></div>
                                 </div>
                             </div>
                         </div>
                         <div data-aos="zoom-in-left" class="col-md-6 d-flex justify-content-center align-items-center">
-                            <h2> <i id="Left-Arrow" class="bi bi-arrow-left"></i> <i id="Up-Arrow"
-                                    class="bi bi-arrow-up"></i> Soft Skills</h2>
+                            <div id="zoomText">
+                                <h2 id="skillsColorSwitch"> <i id="Left-Arrow" class="bi bi-arrow-left"></i> <i id="Up-Arrow"
+                                        class="bi bi-arrow-up"></i> Soft Skills</h2>
+                            </div>
                         </div>
                     </div>
 
@@ -446,9 +452,8 @@
                     <div data-aos="zoom-in" class="headingContainer">
                         <h2 id="leftHeadingCircle"> Work Experience </h2>
                     </div>
-                    <div data-aos="zoom-in-left" id="EducationContainer"
-                        class="bg-light shadow-lg px-5 py-4 my-5">
-                        <div id="EducationCircle" class="mb-4">
+                    <div data-aos="zoom-in-left" id="EducationContainer" class="bg-light shadow-lg px-5 py-4 my-5">
+                        <div id="EducationCircle" class="d-flex mb-4 justify-content-between">
                             <a class="h4 text-decoration-underline" href="http://www.virtualworld.capetown/"
                                 target="_blank"> Virtual World</a>
                             <h5>2017</h5>
@@ -488,8 +493,8 @@
                 <h5 id="clickText" style="opacity:0.5;" class="fs-3"> Click to view </h5>
             </div>
             <div data-aos="zoom-in-down" class="projects-container my-5">
-                <div class="mx-auto my-5 imgContainer">
-                    <img class="w-100 img-fluid" src="./images/Projects/Rainbow/Rainbow.png" alt="RainbowProject">
+                <div id="projectZoom" class="shadow-lg mx-auto my-5 imgContainer">
+                    <img class="w-100 img-fluid" src="./images/Projects/Rainbow/Rainbow.png" alt="Rainbow Project">
                     <div class="hoverIcon">
                         <div class=" ps-3 d-flex align-items-center justify-content-between w-100 h-100">
                             <div class="row">
@@ -516,9 +521,9 @@
                         </div>
                     </div>
                 </div>
-                <div data-aos="zoom-in-up" class=" mx-auto my-5 imgContainer">
+                <div id="projectZoom" data-aos="zoom-in-up" class=" shadow-lg mx-auto my-5 imgContainer">
                     <img class="img-fluid w-100" src="./images/Projects/HolidayDestination/HolidayDestination.png"
-                        alt="HolidayProject">
+                        alt="Holiday Project">
                     <div class="hoverIcon">
                         <div class=" d-flex align-items-center justify-content-center w-100 h-100">
                             <div class="row">
@@ -546,9 +551,9 @@
                         </div>
                     </div>
                 </div>
-                <div data-aos="zoom-in-down" class="mx-auto my-5 imgContainer">
+                <div id="projectZoom" data-aos="zoom-in-down" class="shadow-lg mx-auto my-5 imgContainer">
                     <img class="img-fluid w-100" src="./images/Projects/Calculator/Calculator.png"
-                        alt="CalculatorProject">
+                        alt="Calculator Project">
                     <div class="hoverIcon">
                         <div class=" d-flex align-items-center justify-content-center w-100 h-100">
                             <div class="row">
@@ -575,8 +580,9 @@
                         </div>
                     </div>
                 </div>
-                <div data-aos="zoom-in-down" class="mx-auto my-5 imgContainer">
-                    <img class="img-fluid w-100" src="./images/Projects/GroupProject/GroupProject.png" alt="GroupProject">
+                <div id="projectZoom" data-aos="zoom-in-down" class="shadow-lg mx-auto my-5 imgContainer">
+                    <img class="img-fluid w-100" src="./images/Projects/GroupProject/GroupProject.png"
+                        alt="GroupProject">
                     <div class="hoverIcon">
                         <div class=" d-flex align-items-center justify-content-center w-100 h-100">
                             <div class="row">
@@ -604,7 +610,7 @@
                         </div>
                     </div>
                 </div>
-                <div data-aos="zoom-in-up" class="mx-auto my-5 imgContainer">
+                <div id="projectZoom" data-aos="zoom-in-up" class="shadow-lg mx-auto my-5 imgContainer">
                     <img class="img-fluid w-100" src="./images/Projects/MockPortfolio/MockPortfolio.png"
                         alt="MockPortfolioProject">
                     <div class="hoverIcon">
@@ -659,7 +665,7 @@
                                 <div class="row m-4">
                                     <div class="col-md-4">
                                         <img id="TestimonialImage" class="img-fluid d-block h-100 w-100"
-                                            src="./images/Portfolio_Images/Monique (2).jpg">
+                                            src="./images/Portfolio_Images/Monique (2).jpg" alt="Monique Dampies">
                                     </div>
                                     <div class="col-md-8">
                                         <h2 id="TestimonialName"> Monique Dampies</h2>
@@ -677,7 +683,7 @@
                                 <div class="row m-4">
                                     <div class="col-md-4">
                                         <img id="TestimonialImage" class="img-fluid d-block h-100 w-100"
-                                            src="./images/Portfolio_Images/Emile (3).jpg">
+                                            src="./images/Portfolio_Images/Emile (3).jpg" alt="Emile Van Wyk">
                                     </div>
                                     <div class="col-md-8">
                                         <h2 id="TestimonialName"> Emile Van Wyk</h2>
@@ -702,7 +708,7 @@
                                 <div class="row m-4">
                                     <div class="col-md-4">
                                         <img id="TestimonialImage" class="img-fluid d-block"
-                                            src="./images/Portfolio_Images/Cassidy (1).jpg">
+                                            src="./images/Portfolio_Images/Cassidy (1).jpg" alt="Cassidy Manuel">
                                     </div>
                                     <div class="col-md-8">
                                         <h2 id="TestimonialName"> Cassidy Manuel</h2>
@@ -720,7 +726,8 @@
                                 <div class="row m-4">
                                     <div class="col-md-4">
                                         <img id="TestimonialImage" class="img-fluid d-block h-100 w-100"
-                                            src="./images/Portfolio_Images/Daniel (2).jpg">
+                                            src="./images/Portfolio_Images/Daniel (2).jpg"
+                                            alt="Daniel Fredericks">
                                     </div>
                                     <div class="col-md-8">
                                         <h2 id="TestimonialName"> Daniel Fredericks</h2>
@@ -744,7 +751,7 @@
                                 <div class="row m-4">
                                     <div class="col-md-4">
                                         <img id="LecturerImage" class="img-fluid d-block h-100 w-100"
-                                            src="./images/Portfolio_Images/joel2.jpg">
+                                            src="./images/Portfolio_Images/joel2.jpg" alt="Joel Mukanya">
                                     </div>
                                     <div class="col-md-8">
                                         <h2 id="TestimonialName"> Joel Mukanya</h2>
@@ -763,7 +770,7 @@
                                 <div class="row m-4">
                                     <div class="col-md-4">
                                         <img id="LecturerImage" class="img-fluid d-block h-100 w-100"
-                                            src="./images/Portfolio_Images/godwin-2.jfif">
+                                            src="./images/Portfolio_Images/godwin-2.jfif" alt="Godwin Dzvapatsva">
                                     </div>
                                     <div class="col-md-8">
                                         <h2 id="TestimonialName"> Godwin Dzvapatsva</h2>
@@ -778,7 +785,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -849,16 +855,21 @@
                     <div class="headingContainer">
                         <h2 class=" pt-5 pb-4 text-white fs-3"> Linkedin <a id="footerIcon" target="_blank"
                                 href="https://www.linkedin.com/in/reagan-carolussen-03054823a/"><i
-                                    class="bi bi-linkedin"></i></a></h2>
+                                    class="bi bi-linkedin"></i></a>
+                        </h2>
+
                         <p id="footerText" class="fs-5 pb-4"><a id="footerIcon" target="_blank"
                                 href="https://www.linkedin.com/in/reagan-carolussen-03054823a/"> Reagan Carolussen <i
-                                    class="bi bi-linkedin"></i></a></p>
+                                    class="bi bi-linkedin"></i></a>
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="headingContainer">
                         <h2 class=" pt-5 pb-4 text-white fs-3"> CodePen <a id="footerIcon" target="_blank"
-                                href="https://codepen.io/reagan701"><i class="fa-brands fa-codepen"></i></a></h2>
+                                href="https://codepen.io/reagan701"><i class="fa-brands fa-codepen"></i></a>
+                        </h2>
+
                         <p id="footerText" class="fs-5 pb-4"><a id="footerIcon" target="_blank"
                                 href="https://codepen.io/reagan701"> Reagan701 <i class="fa-brands fa-codepen"></i></a>
                         </p>

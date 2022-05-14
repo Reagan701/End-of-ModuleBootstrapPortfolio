@@ -42,6 +42,13 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
+
+
+#navbar{
+    transition: 0.6s;
+    box-Shadow: 0 0.5rem 1rem rgba(0,0,0,0.15)
+}
+
 #projectBtn:hover {
     background-color: white;
     color: #190844;
@@ -54,14 +61,12 @@ body {
 #footerIcon,
 #navbarIcon {
     color: inherit;
+    transition: 0.1s;
 }
 
-#footerIcon:hover {
-    color: #3506ac;
-}
-
-#navbarIcon:hover {
-    color: #3506ac;
+#footerIcon:hover, #navbarIcon:hover, #navText:hover, #nameNavText:hover {
+    color: #4108cf;
+    transform: scale(1.1);
 }
 
 #InputContainer,
@@ -111,9 +116,51 @@ button {
     font-family: 'Open Sans', sans-serif;
 }
 
-#navText {
+#navText,#nameNavText {
     color: #190844;
     font-weight: 900;
+}
+
+#projectZoom{
+    transition: 0.4s;
+}
+
+#projectZoom:hover{
+    transform: scale(1.1);
+}
+
+#zoomText{
+    transition: 0.2s;
+    user-select: none;
+}
+#zoomText:hover{
+    transform: scale(1.5);
+}
+
+#skillsColorSwitch:hover{
+    animation: skillsColorSwitch 3s infinite alternate;
+}
+
+#technicalSkillsColorSwitch:hover{
+    animation: technicalSkillsColorSwitch 6s infinite alternate;
+}
+
+@keyframes skillsColorSwitch {
+    0%{ color:#190844; }
+    25%{ color: #ea3a23; }
+    50%{ color: #3395cd; }
+    75%{ color: greenyellow; }
+    100%{ color: orange; }
+}
+
+@keyframes technicalSkillsColorSwitch {
+    0%{ color:#190844; }
+    16.6%{ color: #ea3a23; }
+    33.2%{ color: #3395cd; }
+    49.8%{ color: #343a40; }
+    68.4%{ color: #7309f5; }
+    85%{ color: #75217d; }
+    100%{ color: #33bdcd; }
 }
 
 p,
@@ -161,7 +208,6 @@ ul, li, p{
     font-size: 1.5rem;
     font-weight: 700;
 }
-
 
 #EducationImage {
     object-fit: contain;
@@ -231,9 +277,65 @@ ul, li, p{
     opacity: 1;
 }
 
+@media screen and (max-width:1024px) {
+    
+    #navbar{
+        background-color: white;
+    }
+    #navBarSize,#nameNavText{
+        font-size: 1.2rem;
+    }
+    #projectHeadingCircle::before {
+        top: 2rem;
+        left: 8rem;
+    }
+    #testimonialHeadingCircle::before {
+        top: 2.3rem;
+        left: 12.6rem;
+    }
+    
+}
+
+@media screen and (min-width:1024px) {
+    #landingHeading{
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    #landingHead{
+        margin-top:3rem !important;
+    }
+
+    #navBarSize,#nameNavText{
+        font-size: 1.6rem;
+    }
+    #projectHeadingCircle::before {
+        top: 2.4rem;
+        left: 18rem;
+    }
+    #testimonialHeadingCircle::before {
+        top: 2.4rem;
+        left: 23rem;
+    }
+
+}
+
 @media screen and (max-width:768px) {
     #Right-Arrow {
         display: none;
+    }
+
+    #navNameHead{
+        margin-left: 1rem;
+        text-align: center;
+    }
+
+    #technicalSkillsColorSwitch{
+        padding-bottom: 25px ;
+    }
+
+    .aboutHead{
+        padding-top: 0.8rem;
     }
 
     #hoverOverText {
@@ -241,7 +343,7 @@ ul, li, p{
     }
 
     #headingCircle::before {
-        top: 1.563rem;
+        top: 2.4rem;
         left: -0.8rem;
     }
     #TestimonialName{
@@ -264,12 +366,9 @@ ul, li, p{
     }
 
     #BootstrapIcon {
-        position: absolute;
         object-fit: cover;
         min-height: 3.125rem;
         width: 3.125rem;
-        bottom: 0.063rem;
-        left: 7.188rem;
     }
 
     #CIcon {
@@ -277,7 +376,7 @@ ul, li, p{
         object-fit: cover;
         min-height: 3.125rem;
         width: 3.125rem;
-        left: 7.188rem;
+        left: 6.7rem;
     }
 
     #Slider {
@@ -296,6 +395,10 @@ ul, li, p{
         display: none;
     }
 
+    #navNameHead{
+        margin-left: 3rem;
+    }
+
     #clickText {
         display: none;
         opacity: 0.5;
@@ -310,16 +413,6 @@ ul, li, p{
     #leftHeadingCircle::before {
         top: 2.188rem;
         left: -0.938rem;
-    }
-
-    #projectHeadingCircle::before {
-        top: 2.5rem;
-        left: 18rem;
-    }
-
-    #testimonialHeadingCircle::before {
-        top: 2.5rem;
-        left: 23rem;
     }
 
     #Slider {
